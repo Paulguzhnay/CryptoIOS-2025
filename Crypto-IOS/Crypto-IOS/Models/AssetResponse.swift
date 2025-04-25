@@ -1,5 +1,5 @@
-struct AssetsResponse:Decodable{
-    let data:[Asset]
+struct AssetResponse: Decodable {
+    var data: Asset
 }
 
 //struct RequestBody:Encodable{

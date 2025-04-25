@@ -1,23 +1,21 @@
 import SwiftUI
 
-struct AppTabView: View{
+struct AppTabView: View {
     var body: some View {
-        TabView{
-            Tab("Home", systemImage: "house"){
+        TabView {
+            Tab("Home", systemImage: "house") {
                 AssetList()
-                    .navigationTitle("Home")
             }
-            Tab("Favourites", systemImage: "star"){
-                Text("Favourites")
+            Tab("Favourites", systemImage: "star") {
+                FavouritesView()
             }
-            Tab("Settings", systemImage: "gear"){
-                Text("Settings")
+            Tab("Settings", systemImage: "gear") {
+                SettingsView()
             }
         }
     }
 }
 
-#Preview{
+#Preview {
     AppTabView()
 }
-
